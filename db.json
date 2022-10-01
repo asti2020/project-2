@@ -1,0 +1,31 @@
+{
+  "Inventory": [
+    {
+      "id": 1,
+      "image": "https://media.bergdorfgoodman.com/f_auto,q_auto:low,ar_5:7,c_fill,dpr_2.0,w_720/01/bg_4284595_100030_m",
+      "name": "Gown",
+      "detail": "Floral-Print Strapless Twist",
+      "type": "gown",
+      "likes": 10
+    },
+  
+   
+    {
+      "id": 2,
+      "image": "https://i.etsystatic.com/22380725/r/il/6b6e8a/2306984259/il_fullxfull.2306984259_l4c9.jpg",
+      "name": "Gown",
+      "detail": "Luxury Dress",
+      "type":"gown",
+      "likes": 10
+    },
+  
+ {
+    "id": 3,
+    "image": "https://flyingcdn-e81424e1.b-cdn.net/wp-content/uploads/2021/10/3c2aea0389bc15592e36ed0e5a1ce5d6-1440x1440.jpeg",
+    "name": "MK Create",
+    "detail": "some comment",
+    "type" : "bag",
+    "likes": 10
+  }
+]
+}
