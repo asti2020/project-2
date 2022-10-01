@@ -1,18 +1,22 @@
-import {React, useState, useEffect} from 'react'
+import {React} from 'react'
 import CardContainer from './CardContainer.js'
 import { Search } from "./Search.js"
 
 function Home (){
-    const [details, setDetails] = useState({})
-    useEffect (() =>{
-        fetch("http://localhost:3000/Inventory")
-        .then((res) => res.json())
-        .then((data)=> {
-            setDetails(data)
-        })
-    },[])
+    // const [details, setDetails] = useState({})
+    // useEffect (() =>{
+    //     fetch("http://localhost:3000/Inventory")
+    //     .then((res) => res.json())
+    //     .then((data)=> {
+    //         setDetails(data);
+    //     })  
+    //     .catch((err) => {
+    //         console.log(err)
+    //     })
 
-    console.log(details)
+    // },[])
+
+    //          console.log(details)
 
   return (
     <div>
@@ -22,4 +26,6 @@ function Home (){
     </div>
   )
 }
-export default Home;
+
+
+export default Home
