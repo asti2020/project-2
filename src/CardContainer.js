@@ -1,11 +1,17 @@
 import React from 'react'
 import Card from "./Card.js"
 
-function CardContainer () {
+function CardContainer ({details}) {
   return (
     <div> 
-        <ul>
-           <Card> {"list item container"} </Card>
+        <ul className='cardContainer'>
+            { details.map((detail) =>{
+               return (
+                  < Card id={detail.id} detail={detail}/>
+               )
+            })
+             }
+          
         </ul>
      </div>
   )

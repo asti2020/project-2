@@ -1,14 +1,31 @@
-import React from 'react'
+import {React, useState} from 'react'
 
-function Card (){
+
+function Card ({detail}){
+  const [cardRev, setCardRev] = useState(true)
+
+  const handleCard = () =>{
+    setCardRev(!cardRev)
+  }
+
   return (
     <div className='cardCard'>
-      <Card className ="cardContain">
-        <img src ='' alt="this is"/>
-        <h4>Name please</h4>
-        <p>price</p>
-        <p>Description</p>
-      </Card>
+      <card className ="cardContain" onClick={handleCard}>
+      { cardRev ? 
+        (<div>
+            <img className='cardImage' src ={detail.image} alt="this is"/>
+            <h4>{detail.detail}</h4>
+            <p>${detail.price}</p>
+            <p>Get a sale alert!</p>
+          </div>)
+         : 
+        (<div>
+          <h4>{detail.detail}</h4>
+          <p>{detail.reviews}</p>
+        </div>)
+    }
+
+      </card>
     </div>
   )
 }

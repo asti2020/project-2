@@ -1,31 +1,82 @@
 .App {
   text-align: center;
 }
+
+.saearChing{
+  margin-top: 200px;
+}
+
+.searchInput{
+  width:40%;
+  height: 4vw;
+  border-radius: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
 .navBar{
   display: flex;
   background-color: black;
   padding: 10px;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .navTog{
   padding: 10px;
   color: wheat;
   text-decoration: none;
 }
+div.cardCard{
+  padding: 10px;
+  margin: 10px;
+}
 .cardCard{
-  margin-top: 200px;
-  width: 300px;
-  height: 200px;
+  margin-top: 20vw;
+  width: 30vw;
+  height: auto;
   border-radius: 10px;
   background-color: white;
   border: 1px solid black;
-}
-.saearChing{
-  margin-top: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.searchInput{
-  width:30%;
-  height: 40px;
+.cardImage{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.cardContainer{
+  display: flex;
+}
+
+Card {
+  padding: 20px;
+}
+.form{
+  padding: 100px
+}
+
+
+.formy{
+  display: flex;
+  height: auto;
+  background-origin: padding-box;
+  flex-direction: column;
+  padding: 20px;
   border-radius: 10px;
+  align-items: center;
+}
+
+.form-control{
+    background-color: #3CBC8D;
+    color: white;
+    width: 400px;
+    height: 40px;
+    align-items: center;
+    margin: 2px;
+}
+.button{
+  background-color: #3CBC8D;
+    color: white;
+    width: 100px;
+    height: 40px;
 }
