@@ -1,35 +1,63 @@
 .App {
   text-align: center;
 }
+.container{
+  display: flex;
+}
 
 .saearChing{
-  margin-top: 200px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  align-items: center;
 }
 
 .searchInput{
-  width:40%;
+  width:50%;
   height: 4vw;
   border-radius: 10px;
   transition: width 0.4s ease-in-out;
 }
 
 .navBar{
-  display: flex;
-  background-color: black;
-  padding: 10px;
-  justify-content: flex-end;
+  margin-right: 150px;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
 }
 .navTog{
   padding: 10px;
   color: wheat;
   text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+.navTog:hover{
+  color: greenyellow;
+}
+
+@media screen and (max-height: 450px) {
+  .navBar {padding-top: 15px;}
+  .navTog {font-size: 18px;}
+}
+
+.bodyHomeContainer{
+  flex: 1;
+  margin-left: 200px;
 }
 div.cardCard{
   padding: 10px;
   margin: 10px;
 }
 .cardCard{
-  margin-top: 20vw;
+  margin: 20vw;
   width: 30vw;
   height: auto;
   border-radius: 10px;
@@ -46,6 +74,8 @@ div.cardCard{
 }
 .cardContainer{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 Card {

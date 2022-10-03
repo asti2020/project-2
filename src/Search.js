@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Search = ({setSearch}) => {
 
   return (
@@ -7,7 +8,7 @@ export const Search = ({setSearch}) => {
         <input 
           className='searchInput' 
           type="text"
-          placeholder="search..."
+          placeholder="Searchi..."
           onChange={(e) => setSearch(e.target.value)}
         />
     </div>

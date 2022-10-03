@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import {DiGrails} from "react-icons/di";
 
 
 function Card ({detail}){
@@ -16,12 +17,13 @@ function Card ({detail}){
             <img className='cardImage' src ={detail.image} alt="this is"/>
             <h4>{detail.detail}</h4>
             <p>${detail.price}</p>
-            <p>Get a sale alert!</p>
+            <p>Get a sale alert!  <DiGrails/></p>
           </div>)
          : 
         (<div>
           <h4>{detail.detail}</h4>
           <p>{detail.reviews}</p>
+          <button>Add to Cart</button>
         </div>)
     }
 

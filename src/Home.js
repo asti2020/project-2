@@ -24,7 +24,7 @@ function Home (){
       })
 
   return (
-    <div>
+    <div className='bodyHomeContainer'>
          <Search setSearch={setSearch}></Search>
          <CardContainer details={searchFilter}></CardContainer> 
            

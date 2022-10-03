@@ -8,15 +8,18 @@ function App() {
 
   return (
     <div className="App">
+      <div className="container">
       <nav className="navBar">
           <Link className="navTog" to="/">Home</Link>
-          <Link className="navTog" to="/hot">Hot</Link>
+          <Link className="navTog" to="/CardContainer">Product</Link>
           <Link className="navTog" to="/admin">Admin</Link>
       </nav>
       <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/admin" element={<Admin />}/>
-      </Routes>  
+
+      </Routes> 
+      </div> 
     </div>
   )
 }
