@@ -1,20 +1,19 @@
 import React from 'react'
-import Card from "./Card.js"
+import ProductCard from "./ProductCard.js"
 
 function CardContainer ({details}) {
-  return (
-    <div> 
-        <ul className='cardContainer'>
-            { details.map((detail) =>{
-               return (
-                  < Card id={detail.id} detail={detail}/>
-               )
-            })
-             }
-          
-        </ul>
-     </div>
-  )
-}
 
-export default CardContainer;
+   return (
+     <div> 
+         <ul className='cardContainer'>
+             { details.map((detail) =>{
+                return (
+                   <ProductCard id={detail.id}  detail={detail}/>
+                )
+             })
+              }
+          </ul>
+      </div>
+   )
+ }
+ export default CardContainer;
