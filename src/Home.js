@@ -23,10 +23,13 @@ function Home (){
         )
       })
 
+
   return (
+    
     <div>
+    
          <Search setSearch={setSearch}></Search>
-         <CardContainer details={searchFilter}></CardContainer> 
+         <CardContainer details={searchFilter}></CardContainer>
            
     </div>
   )

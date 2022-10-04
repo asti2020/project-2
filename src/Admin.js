@@ -37,6 +37,7 @@ function Admin  (){
   return (
     <div className='form'>
         <form className="formy" onSubmit={handleSumbmit}>
+        <label> ADD NEW ITEM</label>
             <input value={name}
                 type="text"
                 className="form-control"

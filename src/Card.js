@@ -14,8 +14,9 @@ function Card ({detail}){
       { cardRev ? 
         (<div>
             <img className='cardImage' src ={detail.image} alt="this is"/>
+            <h2>{detail.name}</h2>
             <h4>{detail.detail}</h4>
-            <p>${detail.price}</p>
+            <p>${detail.price} per day</p>
             <p>Get a sale alert!</p>
           </div>)
          : 
