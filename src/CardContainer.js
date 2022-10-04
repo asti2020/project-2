@@ -1,18 +1,21 @@
 import React from 'react'
 import Card from "./Card.js"
+import { Link } from "react-router-dom";
+
 
 function CardContainer ({details}) {
+
   return (
     <div> 
-        <ul className='cardContainer'>
+        <ul to="/profile" className='cardContainer'>
             { details.map((detail) =>{
+               console.log(detail)
                return (
-                  < Card id={detail.id} detail={detail}/>
+                  <Card id={details.id} detail={detail}/>
                )
             })
              }
-          
-        </ul>
+         </ul>
      </div>
   )
 }
