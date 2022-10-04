@@ -21,7 +21,10 @@ function Profile () {
 
   return (
     <>
+    <h3>Product</h3>
+    <hr></hr>
       <div>{<CardContainer details={details}/>}</div>
+      <hr></hr>
       <div>
         < NavProfile/>
       </div>

@@ -9,11 +9,11 @@ export const NavProfile = () => {
         <div className="dropdown">
             <span>Product Filter</span>
             <div className="dropdown-content">
-            <select
-        name="category-list"
-        id="category-list"
-        onChange={handleCategoryChange}
-      >
+        <select
+            name="category-list"
+            id="category-list"
+            onChange={handleCategoryChange}
+        >
          <option value="">All</option>
          <option value="">Outdoor</option>
          <option value="">Indoor</option>
