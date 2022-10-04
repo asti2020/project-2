@@ -5,10 +5,14 @@
       "image": "https://prod-images.fashionphile.com/large/db530383d9974334fe7a38f71bb3a9e6/78b6659d0b5f3ef297b1ea595a8ac1fa.jpg",
       "name": "jacquard fabric tote",
       "detail": "PRADA",
-      "type": "tote",
+      "type": "new",
       "color": "brown",
       "price": "100.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "love!!",
+        [],
+        []
+      ],
       "likes": 10
     },
     {
@@ -16,10 +20,14 @@
       "image": "https://prod-images.fashionphile.com/large/f52d8ce45ba69ce474ae6ee55209364b/76475e2b312c5ce397be4470ec5f9995.jpg",
       "name": "jackie 1961 medium",
       "detail": "GUCCI X BALENCIAGA",
-      "type": "shoulder-bag",
+      "type": "old",
       "color": "black",
       "price": "150.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        [],
+        []
+      ],
       "likes": 10
     },
     {
@@ -27,10 +35,13 @@
       "image": "https://prod-images.fashionphile.com/large/ae6129445541dea8629c70c48760ceb4/515a7589989d026ffa35baf2d06a80dc.jpg",
       "name": "calfskin mini diana tote bag",
       "detail": "GUCCI",
-      "type": "handbag",
+      "type": "old",
       "color": "white",
       "price": "150.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        []
+      ],
       "likes": 10
     },
     {
@@ -39,9 +50,12 @@
       "name": "tie shoulder bag",
       "detail": "BOTTEGA VENETA",
       "type": "shoulder-bag",
-      "color": "pink",
+      "color": "new",
       "price": "130.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        []
+      ],
       "likes": 10
     },
     {
@@ -49,10 +63,13 @@
       "image": "https://prod-images.fashionphile.com/large/ff425f83b7b364068b94580338799edf/7eacc3dde007207dd86d2638692187c5.jpg",
       "name": " calfskin large boy flap",
       "detail": "CHANEL",
-      "type": "shoulder",
+      "type": "old",
       "color": "black",
       "price": "300.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        []
+      ],
       "likes": 10
     },
     {
@@ -60,10 +77,13 @@
       "image": "https://prod-images.fashionphile.com/large/1ee52e1e5ec7c0efeda68f90fb97be3c/61984b9b048873cae396a0c1a2e4be27.jpg",
       "name": "cassette crodssbody",
       "detail": "BOTTEGA VENETA",
-      "type": "crossbody",
+      "type": "new",
       "color": "orange",
       "price": "120.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        []
+      ],
       "likes": 10
     },
     {
@@ -71,27 +91,14 @@
       "image": "https://prod-images.fashionphile.com/large/ae6129445541dea8629c70c48760ceb4/4d2321f772e723d34f182f86bbacce8e.jpg",
       "name": "re-edition shoulder bag",
       "detail": "PRADA",
-      "type": "shoulder-bag",
+      "type": "old",
       "color": "yellow",
       "price": "85.00",
-      "reviews": "best product jdhjh sgfjhsgfk ngfjhgjkf hjsfghjgjh gfjhgf",
+      "reviews": [
+        "best bag ever!",
+        []
+      ],
       "likes": 10
-    },
-    {
-      "name": "",
-      "image": "",
-      "price": "",
-      "detail": "",
-      "type": " ",
-      "id": 8
-    },
-    {
-      "name": "",
-      "image": "",
-      "price": "",
-      "detail": "",
-      "type": " ",
-      "id": 9
     }
   ]
 }
