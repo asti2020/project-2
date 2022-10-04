@@ -2,9 +2,11 @@ import {React, useState} from 'react'
 import {DiGrails} from "react-icons/di";
 
 
-function Card ({detail}){
+function ProductCard ({detail}){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
+
+  let reviewww = detail.reviews;
 
   const handleCard = () =>{
     setCardRev(false)
@@ -23,7 +25,7 @@ function Card ({detail}){
       })
 
       .then((res) => res.json())
-      .then((item) => console.log(item))
+      .then((item) =>console.log(item.reviews))
       
   }
 
@@ -42,8 +44,11 @@ function Card ({detail}){
         (<div>
           <h4>{detail.detail}</h4>
           <hr/>
-          <ul> {detail.reviews.map((review) =>{
-          return(<li key={review}>{review}</li>)
+          <ul> {reviewww.map((review, index) =>{
+            if(review){
+
+            }
+          return(<li key={index}>{review}</li>)
         })}
           </ul>
           <form onSubmit={handleSubmitReview}>
@@ -54,7 +59,7 @@ function Card ({detail}){
                       placeholder="add your review here ...."
                       onChange={(e) => setReview(e.target.value)}
               />
-              <button>Review</button>
+              <input type="submit" placeholder='submit'/>
           </form>
         </div>)
     }
@@ -64,4 +69,4 @@ function Card ({detail}){
   )
 }
 
-export default Card;
+export default ProductCard;
