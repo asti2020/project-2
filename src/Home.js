@@ -1,6 +1,6 @@
 import { React, useEffect, useState} from 'react'
-import CardContainer from './CardContainer.js'
-import { Search } from "./Search.js"
+import CardContainer from './Components/CardContainer.js'
+import { Search } from "./Components/Search.js"
 
 
 function Home (){
@@ -10,7 +10,7 @@ function Home (){
     fetch("http://localhost:3000/Inventory")
     .then((res) => res.json())
     .then((data)=> {
-        setDetails(data);
+        console.log(setDetails);
     })  
     .catch((err) => {
         console.log("404 page returned")
@@ -25,12 +25,13 @@ const searchFilter = details.filter((item) =>{
   item.detail.toLowerCase().includes(search.toLowerCase()) 
   )
 })
-const homeProductFilter = details.filter((item) => { 
-  if(item.type === "new"){
-    return (item.type)
-   }} )
 
-console.log(homeProductFilter, "help")
+// const homeProductFilter = details.filter((item) => { 
+//   if(item.type === "new"){
+//     return (item.type)
+//    }} )
+// 
+// console.log(homeProductFilter, "help")
 
 
   return (

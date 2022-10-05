@@ -7,7 +7,7 @@ function ProductCard ({detail}){
   let reviewww = detail.reviews;
 
   const handleCard = () =>{
-    setCardRev(false)
+    setCardRev(!cardRev)
   }
 
   const handleSubmitReview = (e) =>{
@@ -29,7 +29,7 @@ function ProductCard ({detail}){
 
   return (
     <div className='cardCard'>
-      <card className ="cardContain" onClick={handleCard}>
+      <main className ="cardContain" onClick={handleCard}>
       { cardRev ? 
         (<div>
             <img className='cardImage' src ={detail.image} alt="this is"/>
@@ -63,7 +63,7 @@ function ProductCard ({detail}){
           </form>
         </div>)
     }
-      </card>
+      </main>
     </div>
   )
 }

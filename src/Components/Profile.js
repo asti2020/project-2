@@ -1,9 +1,5 @@
 import {React, useEffect, useState} from 'react'
 import CardContainer from './CardContainer'
-import {NavProfile} from './NavProfile'
-
-
-
 
 function Profile () {
 
@@ -32,7 +28,7 @@ function Profile () {
 
       <div>
 
-        <NavProfile />
+      
 
       </div>
 
@@ -48,4 +44,4 @@ function Profile () {
 
 
 
-export default Profile
+export default Profile;

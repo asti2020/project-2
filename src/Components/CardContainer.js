@@ -8,7 +8,7 @@ function CardContainer ({details}) {
          <ul className='cardContainer'>
              { details.map((detail) =>{
                 return (
-                   <ProductCard id={detail.id}  detail={detail}/>
+                   <ProductCard key={detail.id}  detail={detail}/>
                 )
              })
               }
