@@ -7,7 +7,7 @@ function Admin  (){
     const[detail, setDetails] = useState("")
     const [type, setProductType] = useState(" ")
 
-    const handleSumbmit = (e) =>{
+    const handleNewProductSubmit = (e) =>{
         e.preventDefault()
     
 
@@ -36,40 +36,40 @@ function Admin  (){
 
   return (
     <div className='form'>
-        <form className="formy" onSubmit={handleSumbmit}>
+        <form className="formy" onSubmit={handleNewProductSubmit}>
         <label> ADD NEW ITEM</label>
             <input value={name}
                 type="text"
                 className="form-control"
-                placeholder="Name.."
+                placeholder="PRODUCT NAME"
                 onChange={(e) => setName(e.target.value)}
             />
             <input 
                 value={image} 
                 src=''  
                 className="form-control"
-                placeholder="image Url"
+                placeholder="IMAGE URL"
                 onChange={(e) => setImage(e.target.value)}
             />
             <input
                  value={price} 
                  type="price" 
                  className="form-control" 
-                 placeholder="price"
+                 placeholder="PRICE PER DAY"
                  onChange={(e) => setPrice(e.target.value)}
             />
             <input
                 value={type}
-                type="text"
+                type="NEW"
                 className="form-control"
-                placeholder="Type of product"
+                placeholder="NEW"
                 onChange={(e) => setProductType(e.target.value)}
             />
             <input 
                 value={detail}
                 type="detail"  
                 className="form-control" 
-                placeholder="detail"
+                placeholder="BRAND"
                 onChange={(e) => setDetails(e.target.value)}
             />
             
@@ -78,4 +78,4 @@ function Admin  (){
     </div>
   )
 }
-export default Admin
+export default Admin;
