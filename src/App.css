@@ -113,7 +113,8 @@ Card {
 .ReviewCart{
   width: 150px;
   height:50px;
-},
+}
+
 .dropdown {
   position: relative;
   display: inline-block;

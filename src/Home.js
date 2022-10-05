@@ -1,4 +1,3 @@
-import { faDisplay } from '@fortawesome/free-solid-svg-icons'
 import { React, useState, useEffect} from 'react'
 import CardContainer from './CardContainer.js'
 import { Search } from "./Search.js"
@@ -29,7 +28,11 @@ function Home (){
       const homeProductFilter = details.filter((item) =>{
         if(item.type === "new"){
           return (item.type)
-         }} )
+         }
+        return(
+          (item.type)
+          && (item.price)
+        )} )
       
 console.log(homeProductFilter)
   return (

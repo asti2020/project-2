@@ -1,18 +1,15 @@
 import './App.css';
-import { React, useEffect, useState } from 'react'
+import { React } from 'react'
 import { Route, Link, Routes } from "react-router-dom";
 import Home from './Home';
 import Admin from './Admin';
-import CardContainer from './CardContainer';
 import Profile from './Profile';
-
+import {TypeError} from './TypeError';
 
 
 
 function App() {
   
-  
-
   return (
     <div className="App">
       <div className="container">
@@ -23,6 +20,7 @@ function App() {
       </nav>
       <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="*" element={<TypeError />}/>
             <Route path="/product" element={<Profile />}/>     
             <Route path="/admin" element={<Admin />}/>
 

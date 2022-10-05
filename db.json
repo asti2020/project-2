@@ -17,7 +17,8 @@
         "dfjj",
         "jdk",
         "fhj",
-        []
+        [],
+        "g"
       ]
     },
     {
@@ -72,8 +73,9 @@
       "image": "https://i.pinimg.com/736x/69/bf/eb/69bfeb18a2601d0df42f3f4780bc9734--makeup-drawing-drawing-art.jpg",
       "price": "2999",
       "detail": "custum made",
-      "type": " gown",
+      "type": " new",
       "id": 5,
+      "brand" :"bag",
       "reviews": [
         "best product "
       ]
