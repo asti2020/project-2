@@ -10,8 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navBar"> <img src={logo} alt="logo"/>
+      <nav className="navBar"> <Link src={logo} alt="logo"/>
         <div className="links-container">
+         
           <Link className="navTog" to="/">Home</Link>
           <Link className="navTog" to="/product" >Product</Link>
           <Link className="navTog" to="/admin">Admin</Link>

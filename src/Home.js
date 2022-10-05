@@ -25,12 +25,12 @@ const searchFilter = details.filter((item) =>{
   item.detail.toLowerCase().includes(search.toLowerCase()) 
   )
 })
-const homeProductFilter = details.filter((item) => { 
-  if(item.type === "new"){
-    return (item.type)
-   }} )
+// const homeProductFilter = details.filter((item) => { 
+//   if(item.type === "new"){
+//     return (item.type)
+//    }} )
 
-console.log(homeProductFilter, "help")
+// console.log(homeProductFilter, "help")
 
 
   return (

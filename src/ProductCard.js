@@ -7,7 +7,7 @@ function ProductCard ({detail}){
   let reviewww = detail.reviews;
 
   const handleCard = () =>{
-    setCardRev(false)
+    setCardRev(!cardRev)
   }
 
   const handleSubmitReview = (e) =>{
@@ -29,12 +29,13 @@ function ProductCard ({detail}){
 
   return (
     <div className='cardCard'>
-      <card className ="cardContain" onClick={handleCard}>
+      <main className ="cardContain" >
+        <button className="btn btn-primary" onClick={handleCard} ></button>
       { cardRev ? 
         (<div>
             <img className='cardImage' src ={detail.image} alt="this is"/>
             <h3>{detail.name}</h3>
-            <h4>{detail.detail}</h4>
+            <h4 >{detail.detail}</h4>
             <p>${detail.price}/day</p>
             <button> Cart </button>
             {/* <p>Get a sale alert!  <DiGrails/></p> */}
@@ -63,7 +64,7 @@ function ProductCard ({detail}){
           </form>
         </div>)
     }
-      </card>
+      </main>
     </div>
   )
 }
