@@ -1,24 +1,24 @@
 import {React, useState} from 'react'
 
-function ProductCard ({detail}){
+function ProductCard ({itemDetail}){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
 
-  let reviewww = detail.reviews;
+  let Reviewww = itemDetail.reviews;
 
   const handleCard = () =>{
-    setCardRev(false)
+    setCardRev(!cardRev)
   }
 
   const handleSubmitReview = (e) =>{
       e.preventDefault();
-      fetch (`http://localhost:3000/Inventory/${detail.id}`,{
+      fetch (`http://localhost:3000/Inventory/${itemDetail.id}`,{
         method: "PATCH",
         headers: {
           "content-type": "application/json",
         },
         body: JSON.stringify({
-          reviews: [...detail.reviews, reviews],
+          reviews: [...itemDetail.reviews, reviews],
         })
       })
 
@@ -29,21 +29,21 @@ function ProductCard ({detail}){
 
   return (
     <div className='cardCard'>
-      <card className ="cardContain" onClick={handleCard}>
+      <main className ="cardContain" onClick={handleCard}>
       { cardRev ? 
         (<div>
-            <img className='cardImage' src ={detail.image} alt="this is"/>
-            <h3>{detail.name}</h3>
-            <h4>{detail.detail}</h4>
-            <p>${detail.price}/day</p>
+            <img className='cardImage' src ={itemDetail.image} alt="this is"/>
+            <h3>{itemDetail.name}</h3>
+            <h4>{itemDetail.detail}</h4>
+            <p>${itemDetail.price}/day</p>
             <button> Cart </button>
             {/* <p>Get a sale alert!  <DiGrails/></p> */}
           </div>)
          : 
         (<div>
-          <h4>{detail.detail}</h4>
+          <h4>{itemDetail.detail}</h4>
           <hr/>
-          <ul> {reviewww.map((review, index) =>{
+          <ul> {Reviewww.map((review, index) =>{
             if(review){
 
             }
@@ -63,7 +63,7 @@ function ProductCard ({detail}){
           </form>
         </div>)
     }
-      </card>
+      </main>
     </div>
   )
 }

@@ -1,6 +1,6 @@
+import CardContainer from './Components/CardContainer.js'
+import { Search } from "./Components/Search.js"
 import { React, useEffect, useState} from 'react'
-import CardContainer from './CardContainer.js'
-import { Search } from "./Search.js"
 
 
 function Home (){
@@ -10,7 +10,7 @@ function Home (){
     fetch("http://localhost:3000/Inventory")
     .then((res) => res.json())
     .then((data)=> {
-        setDetails(data);
+       console.log(setDetails);
     })  
     .catch((err) => {
         console.log("404 page returned")
@@ -19,26 +19,31 @@ function Home (){
 
 },[])
 
-console.log(details)
 const searchFilter = details.filter((item) =>{
   return (item.name.toLowerCase().includes(search.toLowerCase()) ||
   item.detail.toLowerCase().includes(search.toLowerCase()) 
   )
 })
-const homeProductFilter = details.filter((item) => { 
-  if(item.type === "new"){
-    return (item.type)
-   }} )
+// const homeProductFilter = details.filter((item) => { 
+//   if(item.type === "new"){
+//     return (item.type)
+//    }} )
+// 
+// console.log(homeProductFilter)
 
-console.log(homeProductFilter, "help")
+// console.log(homeProductFilter, "help")
+// return(
+//   (item.type)
+//   && (item.price)
+// )} )
 
 
-  return (
-    <div className='bodyHomeContainer'>
-         <Search setSearch={setSearch}></Search>
-         <CardContainer className={"profilecard"} details={searchFilter}></CardContainer>      
-    </div>
-  )
+return (
+  <div className='bodyHomeContainer'>
+       <Search setSearch={setSearch}></Search>
+       <CardContainer className={"profilecard"} details={searchFilter}></CardContainer>      
+  </div>
+)
 }
 
 export default Home
