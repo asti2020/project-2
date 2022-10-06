@@ -4,7 +4,6 @@ function ProductCard ({detail}){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
 
-  let reviewww = detail.reviews;
 
   const handleCard = () =>{
     setCardRev(!cardRev)
@@ -23,9 +22,10 @@ function ProductCard ({detail}){
       })
 
       .then((res) => res.json())
-      .then((item) =>console.log(item.reviews))
+      .then((item) => {
+        console.log(item.reviews)})
 
-  } 
+    } 
 
   return (
     <div className='cardCard'>
@@ -44,7 +44,7 @@ function ProductCard ({detail}){
         (<div>
           <h4>{detail.detail}</h4>
           <hr/>
-          <ul> {reviewww.map((review, index) =>{
+          <ul> {detail.reviews.map((review, index) =>{
             if(review){
 
             }

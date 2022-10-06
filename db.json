@@ -9,17 +9,7 @@
       "color": "brown",
       "price": "100.00",
       "reviews": [
-        "love!!",
-        [],
-        [],
-        "jhfgdjhf",
-        "jgnj",
-        "gfcg",
-        " jhrgtjh",
-        [],
-        "hgfhdfj",
-        "fgjhdjf",
-        "ndf"
+        "love!!"
       ],
       "likes": 10
     },
@@ -32,13 +22,7 @@
       "color": "black",
       "price": "150.00",
       "reviews": [
-        "best bag ever!",
-        [],
-        [],
-        "ghjfg",
-        "hjjh",
-        "jhfg",
-        "gjknkfjg"
+        "best bag ever!"
       ],
       "likes": 10
     },
@@ -51,9 +35,7 @@
       "color": "white",
       "price": "150.00",
       "reviews": [
-        "best bag ever!",
-        [],
-        "ghjh"
+        "best bag ever!"
       ],
       "likes": 10
     },
@@ -66,8 +48,7 @@
       "color": "new",
       "price": "130.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "best bag ever!"
       ],
       "likes": 10
     },
@@ -80,8 +61,7 @@
       "color": "black",
       "price": "300.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "best bag ever!"
       ],
       "likes": 10
     },
@@ -94,8 +74,7 @@
       "color": "orange",
       "price": "120.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "best bag ever!"
       ],
       "likes": 10
     },
@@ -108,9 +87,7 @@
       "color": "yellow",
       "price": "85.00",
       "reviews": [
-        "best bag ever!",
-        [],
-        "fgjhfd"
+        "best bag ever!"
       ],
       "likes": 10
     }

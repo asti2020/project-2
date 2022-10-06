@@ -6,6 +6,7 @@ import { Search } from "./Search.js"
 function Home (){
   const[search, setSearch] = useState('')
   const [details, setDetails] = useState([])
+
   useEffect (() =>{
     fetch("http://localhost:3000/Inventory")
     .then((res) => res.json())
@@ -25,13 +26,6 @@ const searchFilter = details.filter((item) =>{
   item.detail.toLowerCase().includes(search.toLowerCase()) 
   )
 })
-// const homeProductFilter = details.filter((item) => { 
-//   if(item.type === "new"){
-//     return (item.type)
-//    }} )
-
-// console.log(homeProductFilter, "help")
-
 
   return (
     <div className='bodyHomeContainer'>
