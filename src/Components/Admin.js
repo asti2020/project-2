@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import React, { useState} from 'react'
 
 function Admin  (){
     const[name, setName] = useState("")
@@ -6,6 +6,7 @@ function Admin  (){
     const[price, setPrice] = useState("")
     const[detail, setDetails] = useState("")
     const [type, setProductType] = useState(" ")
+    const [review, setReview] = useState([])
 
     const handleNewProductSubmit = (e) =>{
         e.preventDefault()
@@ -20,7 +21,8 @@ function Admin  (){
                 "image": image,
                 "price": price,
                 "detail": detail,
-                "type": type
+                "type": type,
+                "reviews": review
             })
         })
         .then((res) => res.json())
@@ -31,6 +33,7 @@ function Admin  (){
         setPrice(" ")
         setDetails(" ")
         setProductType(" ")
+        setReview(" ")
     }
 
 
@@ -62,7 +65,7 @@ function Admin  (){
                 value={type}
                 type="text"
                 className="form-control"
-                placeholder="NEW"
+                placeholder="NEW OR OLD"
                 onChange={(e) => setProductType(e.target.value)}
             />
             <input 
@@ -71,6 +74,13 @@ function Admin  (){
                 className="form-control" 
                 placeholder="BRAND"
                 onChange={(e) => setDetails(e.target.value)}
+            />
+            <input 
+                value={review}
+                type= "text"
+                className='form-control'
+                placeholder= "FIRST REVIEW"
+                onChange={(e) => setReview([e.target.value])}
             />
             
             <input type="submit" className="button" value="Submit"/>

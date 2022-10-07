@@ -5,6 +5,8 @@ import Admin from './Components/Admin';
 import logo from './images/logooo.png'
 import Profile from './Components/Profile';
 import {TypeError} from './Components/TypeError';
+// import {FaTwitter} from 'react-icons/fa'
+import React from 'react';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         <Route path="/product" element={<Profile />}/>     
         <Route path="/admin" element={<Admin />}/>
       </Routes>  
+      <div className="bottomNav"> helllllo </div>   
     </div>
   )
 }

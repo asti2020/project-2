@@ -6,7 +6,7 @@ function CardContainer ({details}) {
    return (
      <div> 
          <ul className='cardContainer'>
-             { details.map((detail) =>{
+             {details.map((detail) =>{
                 return (
                    <ProductCard key={detail.id}  detail={detail}/>
                 )

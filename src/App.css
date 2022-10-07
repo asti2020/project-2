@@ -1,13 +1,36 @@
 .App {
   text-align: center;
   font-family: 'Karla', sans-serif;
+  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/12/White-Linen-Seamless-Pattern-For-Website-Backgrounds.jpg);
+}
+
+hr {
+  border-color: white !important;
+  border-width: 0px;
+}
+
+.bodyHomeContainer {
+  background-image: url(https://images.ctfassets.net/nh92jw72tw1h/22xH6ZPrgz7FPycY0CvpV4/1735f0fdebc74b696b029363ef73f42c/2.jpg?w=1359);
+  filter: grayscale(100%);
+  height: 300px;
+  width: 100%;
+  
+  background-color: #6E85B7;
+  background-position: center;
+  position: relative;
+ 
 }
 
 .saearChing{
-  margin-top: 20px;
+  margin-top: 0px;
+  position: relative;
+  top: 15%;
+  
+  
 }
 
 .searchInput{
+  position: relative;
   width: 40px;
   height: 4vw;
   /* transition: width 0.5pxs ease-in-out; */
@@ -21,6 +44,9 @@
   text-indent: 5%;
   padding: 3px;
   transition: width .5s ease-out;
+
+  
+
 }
 
 .searchInput:hover, .searchInput:focus {
@@ -46,7 +72,7 @@ ion-icon {
 
 .navBar{
   /* display: flex;  */
-  background-image: linear-gradient(to right, #6E85B7, #B2C8DF);
+  background-color: black;
   padding: 10px;
   position: relative;
   height: 30px;
@@ -77,11 +103,41 @@ div.cardCard{
   background-color: white;
   flex: 0 1 24%;
   border: none;
+  display: flex;
 }
+
+.backCard{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 381px;
+}
+
+li {
+  margin-top: 0;
+  text-align: center !important;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+ul{
+  padding: 0px;
+  list-style-type: none !important;
+}
+
+  
 
 h2 {
   font-weight: 800;
 
+}
+
+h3 {
+  text-transform: lowercase;
 }
 
 .cardImage{
@@ -99,7 +155,8 @@ h2 {
   border-radius: 10px;
   align-items: center;
   font-family: 'Karla', sans-serif;
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-bottom: 250px;
 }
 
 label {
@@ -110,7 +167,7 @@ label {
 }
 
 .form-control{
-    background-image: linear-gradient(to right, #B2C8DF, #6E85B7);
+    background-image: linear-gradient(to right, #22262a, #343638);
     color: white;
     width: 400px;
     height: 40px;
@@ -118,7 +175,7 @@ label {
     margin: 2px;
     font-family: 'Karla', sans-serif;
     border-width: 2px;
-    border-color: #6E85B7;
+    border-color: #323d54;
     border-style:solid;
     border-radius: 5px;
 }
@@ -129,8 +186,8 @@ label {
 }
 
 .button{
-    background-image: linear-gradient(to bottom right, #6E85B7, #B2C8DF);
-    color: white;
+    background-image: linear-gradient(to bottom right, #32353d, #2d3436);
+    color: rgb(151, 156, 162);
     width: 100px;
     height: 40px;
     font-family: 'Karla', sans-serif;
@@ -147,12 +204,28 @@ label {
   display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   
 }
 
 img {
   width: 150px;
   height: 30px;
   float: left;
+  
+}
+
+.addToCartButton {
+  background-color: rgba(75, 75, 75, 0.736);
+  color: white;
+  width: 60px;
+  height: 30px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  border-width: 0px;
+  border-color: #6E85B7;
+  border-style:solid;
+  border-radius: 5px;
+  opacity: 30%;
   
 }
 
@@ -178,4 +251,114 @@ img {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.cartSubmit{
+    background-color: #6E85B7;
+    color: white;
+    width: 65px;
+    height: 30px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #6E85B7;
+    border-style:solid;
+    border-radius: 5px;
+  opacity: 40%;
+
+}
+
+.ReviewCart{
+  border: 4px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  position: relative;
+  width: 250px;
+
+}
+
+/* .ReviewCart[type=text] {
+  padding:10px;
+  margin:10px 0
+} */
+
+.ReviewCart:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.bottomNav{
+  /* display: flex;  */
+  background-color: black;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  position: relative;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.dropdown {
+  background-color: #93a6ac;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  opacity: 70%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bodyHomeContainer .cardContainer {
+  padding-top: 250px;
+  opacity: 100%;
+ 
+}
+
+.error-page {
+  padding-bottom: 600px;;
+}
+
+.homePageTitle {
+    display:flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    /* margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+
+    padding-top: 80px;
+    text-align: center;
+   color: white;
+   vertical-align: middle;
+}
+
+.bodyHomeContainer h4 {
+  padding-right: 30px;
+  justify-content: right;
+  font-size: larger;
+  color: black;
+  opacity: 100%, !important;
+  padding-top: 80px;
+  text-shadow:#fdfeff 0 1px 1px;
 }

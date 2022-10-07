@@ -3,7 +3,7 @@ import React from 'react'
 
 export const TypeError = () => {
   return (
-    <div>
+    <div className="error-page">
         <h4> 404 PAGE: TRY AGAIN </h4>
     </div>
   )

@@ -1,12 +1,10 @@
-import {React, useState} from 'react'
+import React, { useState} from 'react'
 
 function ProductCard ({detail}){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
-
-  let reviewww = detail.reviews;
-
   const handleCard = () =>{
+  
     setCardRev(!cardRev)
   }
 
@@ -21,33 +19,29 @@ function ProductCard ({detail}){
           reviews: [...detail.reviews, reviews],
         })
       })
-
       .then((res) => res.json())
       .then((item) =>console.log(item.reviews))
-
   } 
-
   return (
     <div className='cardCard'>
-      <main className ="cardContain" onClick={handleCard}>
+      <main>
       { cardRev ? 
-        (<div>
+        (<div onClick={handleCard}>
             <img className='cardImage' src ={detail.image} alt="this is"/>
             <h3>{detail.name}</h3>
             <h4>{detail.detail}</h4>
             <p>${detail.price}/day</p>
-            <button> Cart </button>
+            <button className="addToCartButton"> rent! </button>
             {/* <p>Get a sale alert!  <DiGrails/></p> */}
           </div>)
          : 
-        (<div>
-          <h4>{detail.detail}</h4>
+        (<div className='backCard'>
+        <div>
+          <h4 onClick={handleCard}>{detail.name} <br/> {detail.detail}</h4>
+          <h6>♥ reviews ♥</h6> </div>
           <hr/>
-          <ul> {reviewww.map((review, index) =>{
-            if(review){
-
-            }
-
+          <ul> {detail.reviews.map((review, index) =>{
+          
             return(<li key={index}>{review}</li>)
         })}
           </ul>
@@ -56,10 +50,10 @@ function ProductCard ({detail}){
                       value={reviews}
                       type= "text"
                       name="review"
-                      placeholder="add your review here ...."
+                      placeholder="let us know how much you loved this bag... ♥"
                       onChange={(e) => setReview(e.target.value)}
               />
-              <input type="submit" placeholder='submit'/>
+              <input type="submit" placeholder='submit' className="cartSubmit"/>
           </form>
         </div>)
     }

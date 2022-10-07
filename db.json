@@ -9,9 +9,8 @@
       "color": "brown",
       "price": "100.00",
       "reviews": [
-        "love!!",
-        [],
-        []
+        "best bag ever!",
+        "took this on vacation, so chic! great size to carry all your essentials "
       ],
       "likes": 10
     },
@@ -25,8 +24,7 @@
       "price": "150.00",
       "reviews": [
         "best bag ever!",
-        [],
-        []
+        "this bag is definitely something i normally would not carry, but it was so fun to try out something so flashy. went to a balenciaga event and this helped me dress the part "
       ],
       "likes": 10
     },
@@ -39,8 +37,8 @@
       "color": "white",
       "price": "150.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "i really loved the pop of color on this bag! great for every day use",
+        "this bag fit way more than i expected, great twist on a classic"
       ],
       "likes": 10
     },
@@ -54,7 +52,8 @@
       "price": "130.00",
       "reviews": [
         "best bag ever!",
-        []
+        [],
+        "This is such a cute little purse. It’s the perfect size for any occasion. I’m not a fan of large oversized purses so this is a go-to for me!"
       ],
       "likes": 10
     },
@@ -67,8 +66,8 @@
       "color": "black",
       "price": "300.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "i don't normally wear black, but i went to a bachelorette and needed it for the theme, so chic!",
+        "an absolute classic, great for every day"
       ],
       "likes": 10
     },
@@ -81,8 +80,8 @@
       "color": "orange",
       "price": "120.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "this bag is soo cool! so glad i could rent it, don't think i'd get much use out of it otherwise",
+        "i dressed as a sexy construction cone for halloween, perfect bag to carry my phone wallet and keys without ruining the fit"
       ],
       "likes": 10
     },
@@ -95,10 +94,103 @@
       "color": "yellow",
       "price": "85.00",
       "reviews": [
-        "best bag ever!",
-        []
+        "the color is amazing, super functional bag"
       ],
       "likes": 10
+    },
+    {
+      "name": "saddle bag",
+      "image": "https://prod-images.fashionphile.com/large/b75946b85c3e2cd7df16364136cb0f9b/c73b6dd707497f001a83c38541ef6df0.jpg",
+      "price": "200.00",
+      "detail": "CHRISTIAN DIOR",
+      "type": " old",
+      "reviews": [
+        "rented this for a photoshoot... think i will be purchasing",
+        "a classic! loved being able to rent because i already own 3 in other colors "
+      ],
+      "id": 9
+    },
+    {
+      "name": "lady dior ",
+      "image": "https://prod-images.fashionphile.com/large/8b6bc05e0219964edba7e9116ddf9a98/d3097f0423da732bebea77f1cdb8e1a8.jpg",
+      "price": "150.00",
+      "detail": "DIOR",
+      "type": " old",
+      "reviews": [
+        "the cutest bag in the cutest color, obsessed <3"
+      ],
+      "id": 10
+    },
+    {
+      "name": "heart clutch",
+      "image": "https://prod-images.fashionphile.com/large/244d5de8f98186b645c3df4a068ef461/7348259d9cea04f26b09561f9890daf6.jpg",
+      "price": "300.00",
+      "detail": "CHANEL ",
+      "type": "new",
+      "reviews": [
+        "this is such a fun bag for en event! lots of compliments",
+        "i didn't even know this bag existed! rented for a friends black tie wedding and got soo many compliments"
+      ],
+      "id": 11
+    },
+    {
+      "name": "small daria",
+      "image": "https://prod-images.fashionphile.com/large/2888e51e6426d2d93e5da57c190a9c70/efaba38840c8bcb64cfa868e6b31bb51.jpg",
+      "price": "100.00",
+      "detail": "CHLOE",
+      "type": "new",
+      "reviews": [
+        "perfect bag for fall! surprisingly fits a lot ",
+        "this bag is so beautiful, Chloe never fails"
+      ],
+      "id": 12
+    },
+    {
+      "name": "convertible clutch",
+      "image": "https://prod-images.fashionphile.com/large/2888e51e6426d2d93e5da57c190a9c70/71ffb89c116e1ec1a52a1f1f53c9f220.jpg",
+      "price": "50.00",
+      "detail": "BURBERRY",
+      "type": "old",
+      "reviews": [
+        "super fun crossbody, perfect for transition into fall and winter ",
+        "Fits my iphone, has card slots. The chain can fold up nice in the bag to use as clutch but I think it looks best as a small crossbody."
+      ],
+      "id": 13
+    },
+    {
+      "name": "mini pouchette",
+      "image": "https://prod-images.fashionphile.com/large/244d5de8f98186b645c3df4a068ef461/a0d62e2eccda3da3f0337b19e871ab94.jpg",
+      "price": "80.00",
+      "detail": "LOUIS VUITTON",
+      "type": "new",
+      "reviews": [
+        "didn't fit my cellphone which was disappointing. got lots of compliments though! ",
+        "it's giving y2k, but earth tones. i love her so much"
+      ],
+      "id": 14
+    },
+    {
+      "name": "togo birkin 30 ",
+      "image": "https://prod-images.fashionphile.com/large/8a591753983a61481585554557b9dee9/a1f6eee22f5b9a08fcbc6dac94a8e2e3.jpg",
+      "price": "1,250.00",
+      "detail": "HERMES",
+      "type": "new",
+      "reviews": [
+        "rented this for an event. was so cool to be able to have a birkin for a day!!",
+        "this color is magical, i wish i could've kept forever"
+      ],
+      "id": 15
+    },
+    {
+      "name": "monogram coussin bb ",
+      "image": "https://prod-images.fashionphile.com/large/244d5de8f98186b645c3df4a068ef461/09cd0de45bea34aad09441cc9f612ecf.jpg",
+      "price": "175.00",
+      "detail": "LOUIS VUITTON",
+      "type": " old",
+      "reviews": [
+        "this back is sick, makes me feel like an early 2000's celeb"
+      ],
+      "id": 16
     }
   ]
 }

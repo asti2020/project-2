@@ -1,3 +1,17 @@
+## BORROWED WEBSITE: website where you can rent designer bags 
+
+## We used react to build this app. Some of the challenges we faced were overall functionality, trying to  get things to render properly and having our reviews post correctly on their cards. 
+
+## In the future we hope to implement more filtering options, as well as a cart with checkout capabilities and a mailing list option for customers to be alerted when a bad comes back into stock.
+
+## Step 1: Render the products to the screen
+
+## Step 2: Create a functional search bar that can search for products by name or designer
+
+## Step 3: Create a form that enables you to post a new product- this must persist
+
+## Step 4: Enable a post function that allows users to post a review on bags that they have rented, this must persist. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +82,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+

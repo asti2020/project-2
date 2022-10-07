@@ -11,7 +11,7 @@ export const Search = ({setSearch}) => {
           type="text"
           onChange={(e) => setSearch(e.target.value)}
         />
-        <ion-icon name="search-outline"></ion-icon>
+      
     </div>
   
   )

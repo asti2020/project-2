@@ -1,5 +1,8 @@
-import {React, useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import CardContainer from './CardContainer'
+
+
+
 
 function Profile () {
 
@@ -20,22 +23,47 @@ function Profile () {
 
 },[])
 
+const [selectedType, setSelectedType] = useState("")
+      const handleCategoryChange =(e) =>{
+        setSelectedType( e.target.value); 
+     }
+
+    const filteredProductsNew = details.filter((item) =>{
+      if (selectedType === ""){
+         return (true)
+        }
+      return(item.type === selectedType)})
+
+
+
   return (
 
     <>
-
-      <div>{<CardContainer details={details}/>}</div>
-
+    <h3>ALL PRODUCT</h3>
+    
       <div>
-
-      
-
+      <div className="dropdown">
+            <span>filter by </span>
+            <div className="dropdown-content">
+        <select
+            name="category-list"
+            id="category-list"
+            onChange={handleCategoryChange}
+        >
+          {/* <div>{<CardContainer details={details}/>}</div> */}
+          <option value=" ">all</option>
+         <option value="new">new</option>
+         <option value="old">old
+         {/* {<CardContainer details={filteredProductsNewColor}/>} */}
+         </option>
+      </select>
+            </div>
+        </div>
+        <hr></hr>
+      <div>{<CardContainer details={filteredProductsNew}/>}</div>
+      <hr></hr>
       </div>
-
-    </>
-
-
-
+  </>
 
   )
 
@@ -43,5 +71,4 @@ function Profile () {
 
 
 
-
-export default Profile;
+export default Profile
