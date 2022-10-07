@@ -4,7 +4,7 @@ import { BsEmojiHeartEyes } from 'react-icons/bs'
 function ProductCard ({detail, onReview, newCart }){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
-  const[react, setReact] = useState(false)
+  const[react, setReact] = useState(true)
 
   const onClickCard= () =>{
     setReact(!react)
@@ -50,7 +50,7 @@ function ProductCard ({detail, onReview, newCart }){
             <p>Day: {count}</p>
             <button className="addToCartButton" onClick={handleCart}> Book </button>
             {/* className="reactbtn" */}
-            <p  onCLick={onClickCard}>React{react? <BsEmojiHeartEyes/> : < BsEmojiHeartEyes/>}</p>
+            { react ? ( <p  onCLick={onClickCard}><BsEmojiHeartEyes/></p>) : <p className="reactbtn"  onCLick={onClickCard}><BsEmojiHeartEyes/></p> }
           </div>)
          : 
         (<div>
