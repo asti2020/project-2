@@ -165,3 +165,41 @@ img {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* .Banner {
+  background-image: url(./images/Burberry-Banner.jpg);
+} */
+
+.Banner{
+  background-image: url(./images/Burberry-Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  display: block;
+}
+
+a.footerLink{
+  margin: 10px;
+}
+
+a.footerLink:hover {
+  background-color: black;
+  color:white;
+}
+
+.reactbtn{
+  color: red;
+}

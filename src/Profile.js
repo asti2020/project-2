@@ -3,9 +3,7 @@ import {React, useEffect, useState} from 'react'
 import CardContainer from './CardContainer'
 
 function Profile () {
-
-        const [details, setDetails] = useState([])
-
+      const [details, setDetails] = useState([])
       useEffect (() =>{
         fetch("http://localhost:3000/Inventory")
         .then((res) => res.json())
@@ -15,8 +13,6 @@ function Profile () {
         .catch((err) => {
             console.log("404 page returned")
         })
-
-
     },[])
 
       const [selectedType, setSelectedType] = useState("")
@@ -32,9 +28,6 @@ function Profile () {
       return((item.type === selectedType))
     })
       
-
-  
-
   return (
     <>
     <hr></hr>
@@ -47,6 +40,7 @@ function Profile () {
             id="category-list"
             onChange={handleCategoryChange}
         >
+              <option value="">Select</option>
               <option value="new">new</option>
               <option value="old">old</option>
       </select>

@@ -1,10 +1,14 @@
 import {React, useState} from 'react'
+import { BsEmojiHeartEyes } from 'react-icons/bs'
 
-function ProductCard ({detail}){
+function ProductCard ({detail, onReview, newCart }){
   const [cardRev, setCardRev] = useState(true)
   const [reviews, setReview] = useState([])
+  const[react, setReact] = useState(false)
 
-
+  const onClickCard= () =>{
+    setReact(!react)
+  }
   const handleCard = () =>{
     setCardRev(!cardRev)
   }
@@ -23,9 +27,15 @@ function ProductCard ({detail}){
 
       .then((res) => res.json())
       .then((item) => {
-        console.log(item.reviews)})
+        onReview(item.details.reviews)})
 
     } 
+
+    const[count, setCount] = useState(0)
+    const handleCart = () =>{
+      setCount(count + 1)
+      newCart(detail)
+    }
 
   return (
     <div className='cardCard'>
@@ -37,18 +47,16 @@ function ProductCard ({detail}){
             <h3>{detail.name}</h3>
             <h4 >{detail.detail}</h4>
             <p>${detail.price}/day</p>
-            <button> Cart </button>
-            {/* <p>Get a sale alert!  <DiGrails/></p> */}
+            <p>Day: {count}</p>
+            <button onClick={handleCart}> Book </button>
+            {/* className="reactbtn" */}
+            <p  onCLick={onClickCard}>React{react? <BsEmojiHeartEyes/> : < BsEmojiHeartEyes/>}</p>
           </div>)
          : 
         (<div>
           <h4>{detail.detail}</h4>
           <hr/>
           <ul> {detail.reviews.map((review, index) =>{
-            if(review){
-
-            }
-
             return(<li key={index}>{review}</li>)
         })}
           </ul>
@@ -63,7 +71,7 @@ function ProductCard ({detail}){
               <input type="submit" placeholder='submit'/>
           </form>
         </div>)
-    }
+      }
       </main>
     </div>
   )

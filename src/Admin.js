@@ -20,7 +20,8 @@ function Admin  (){
                 "image": image,
                 "price": price,
                 "detail": detail,
-                "type": type
+                "type": type,
+                "reviews": []
             })
         })
         .then((res) => res.json())
@@ -55,21 +56,22 @@ function Admin  (){
                  value={price} 
                  type="price" 
                  className="form-control" 
-                 placeholder="price"
+                 placeholder="$"
                  onChange={(e) => setPrice(e.target.value)}
             />
+
             <input
                 value={type}
-                type="text"
+                type="text"   
                 className="form-control"
-                placeholder="Type of product"
+                placeholder="Text"
                 onChange={(e) => setProductType(e.target.value)}
             />
             <input 
                 value={detail}
                 type="detail"  
                 className="form-control" 
-                placeholder="detail"
+                placeholder="detailss"
                 onChange={(e) => setDetails(e.target.value)}
             />
             
