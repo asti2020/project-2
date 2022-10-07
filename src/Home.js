@@ -22,8 +22,8 @@ function Home ({newCart}){
 
 console.log(details)
 const searchFilter = details.filter((item) =>{
-  if(search === " "){
-    return false
+  if(search === ""){
+    return (false)
   }
   return (item.name.toLowerCase().includes(search.toLowerCase()) ||
   item.detail.toLowerCase().includes(search.toLowerCase()) 
@@ -34,13 +34,13 @@ const searchFilter = details.filter((item) =>{
 
   return (
     <div className='bodyHomeContainer'>
-      <div className='Banner'>
-        <h2>This is the banner</h2>
-        <Search setSearch={setSearch}></Search>
-       </div>
-    
+      <h4 className="homePageTitle">designer bags: without the commitment...
+      <br/>or the price tag</h4>
+      <Search setSearch={setSearch} />
+      <div>
         <CardContainer newCart={newCart} className={"profilecard"} onReview={onReview} details={searchFilter}></CardContainer>  
         <Footer />    
+    </div>
     </div>
   )
 }

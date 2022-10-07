@@ -48,14 +48,14 @@ function ProductCard ({detail, onReview, newCart }){
             <h4 >{detail.detail}</h4>
             <p>${detail.price}/day</p>
             <p>Day: {count}</p>
-            <button onClick={handleCart}> Book </button>
+            <button className="addToCartButton" onClick={handleCart}> Book </button>
             {/* className="reactbtn" */}
             <p  onCLick={onClickCard}>React{react? <BsEmojiHeartEyes/> : < BsEmojiHeartEyes/>}</p>
           </div>)
          : 
         (<div>
           <h4>{detail.detail}</h4>
-          <hr/>
+          <h6>♥ reviews ♥</h6> 
           <ul> {detail.reviews.map((review, index) =>{
             return(<li key={index}>{review}</li>)
         })}
